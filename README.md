@@ -21,6 +21,21 @@ where
     
 **Both \<plain\> and \<key\> need to be B/W bitmap images of the same size (in number of pixels)**. You're encouraged to have a look at the source code and try to understand how it works. You can play and get familiar with the program by encrypting and decrypting images of your own, just remember that the key needs to be of the same size as the image you want to encrypt, and that the same key needs to be used for encryption and decryption (recall OTP is symmetric encryption). The folder *example* also provides some images to play with.
 
+## What you're asked to do
+
+1. Decrypting a ciphertext knowing the key
+Under the folder *decrypting_otp* you will find a cipher-image and a key. Using the *images_xor.py* script, decrypt the cipher-image and recover the corresponding plain-image.
+
+2. Breaking OTP when the key has been reused
+Under the folder *breaking_otp* you will find two cipher-images. We don’t know anything about the corresponding plaintexts, only that they are images and that the same key has been used for both encryptions.
+
+    - a. Can you get any information about the two plaintexts? Beware that we don’t aim at entirely recovering them (which is possible but a bit more complicated (*)). We just want to find out how they look like.
+
+    - b. Find out and explain, in a more formal way (maybe using some mathematical expressions), why it’s a bad idea to reuse the key in OTP. You will need to use the XOR properties seen in class.
+
+3. OTP alternatives
+OTP, by definition, works XORing the plaintext with the key to encrypt, and XORing the ciphertext with the same key to decrypt. Modify the *images_xor.py* script to use the binary operators AND, and then also OR, instead of XOR. What do you observe in both cases and why?
+
 
 
 
