@@ -36,6 +36,8 @@ Under the folder *breaking_otp* you will find two cipher-images. We don’t know
 3. OTP alternatives
 OTP, by definition, works XORing the plaintext with the key to encrypt, and XORing the ciphertext with the same key to decrypt. Modify the *images_xor.py* script to use the binary operators AND, and then also OR, instead of XOR. What do you observe in both cases and why?
 
+(*) You’re of course welcome to try, as a bonus exercise.
+
 
 
 
